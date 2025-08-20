@@ -16,7 +16,7 @@ const Navbar = ({ theme, setTheme, }) => {
         <img src={theme === 'dark' ? assets.logo_dark : assets.logo} alt="companyLogo" className='w-32 sm:w-40' />
 
         <div className={`text-gray-700 dark:text-white/90 sm:text-sm ${!menuClose ? `max-sm:w-0 overflow-hidden` : `max-sm:w-55 max-sm:pl-12`} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:items-start max-sm:bg-primary/60 max-sm:text-white max-sm:pt-20 flex items-center gap-5 transition-all`}>
-        <img src={assets.close_icon} onClick={()=>setMenuClose(false)} alt="closeMenu" className='w-4  absolute top-5 right-5 sm:hidden' />
+        <img src={assets.close_icon} onClick={()=>setMenuClose(false)} alt="closeMenu" className='w-5  absolute top-6 right-15 sm:hidden' />
             {menus.map((menu,idx) => (
                 <li key={idx} className='sm:hover:border-b cursor-pointer list-none'>
                     <a href={menu.link}>{menu.name}</a>
