@@ -80,3 +80,26 @@ export const teamData = [
   { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
   { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
 ]
+
+export const services = [
+  {
+    title:'Advertising',
+    description:'We turn bold ideas into powerful digital solutions that connect, engage.',
+    icon: ads_icon
+  },
+  {
+    title:'Content Marketing',
+    description:'We help you execute your plan and deliver results',
+    icon: marketing_icon
+  },
+  {
+    title: 'Content Writing',
+    description: 'Crafting engaging, SEO-friendly content tailored to your audience',
+    icon: content_icon
+  },
+  {
+    title: 'Social Media Management',
+    description: 'Building your brand presence and growing engagement across platforms',
+    icon: social_icon
+  }
+]
