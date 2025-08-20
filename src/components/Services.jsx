@@ -1,6 +1,7 @@
 import React from 'react'
-import assets from '../assets/assets'
+import assets, { services } from '../assets/assets'
 import ServiceTitle from './ServiceTitle'
+import ServiceCard from './ServiceCard'
 
 const Services = () => {
   return (
@@ -12,6 +13,11 @@ const Services = () => {
                         desc='From strategy to execution, we craft digital solutions that move your business forward.' 
          />
         
+        <div className='flex flex-col md:grid grid-cols-2'>
+            {services.map((service,idx)=>(
+            <ServiceCard key={idx} service={service} index={idx} />
+        ))}
+        </div>
 
      </div>
     </>
