@@ -103,3 +103,21 @@ export const services = [
     icon: social_icon
   }
 ]
+
+export const workData = [
+  {
+    title: 'Mobile app marketing',
+    description: 'We turn bold ideas into powerful digital solutions that connect, engage...',
+    image: work_mobile_app
+  },
+  {
+    title: 'Dashboard Management',
+    description: 'We build intuitive and efficient dashboards that simplify data, boost productivity, and empower decision-making...',
+    image: work_dashboard_management
+  },
+  {
+    title: 'Fitness App Promotion',
+    description: 'We help fitness brands grow by promoting apps that inspire healthier lifestyles and keep users engaged...',
+    image: work_fitness_app
+  }
+]
