@@ -7,11 +7,14 @@ import Work from './components/Work'
 import Teams from './components/Teams'
 import Contact from './components/Contact'
 
+import {Toaster} from 'react-hot-toast'
+
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
   return (
     <>
       <div className='dark:bg-black/95 relative'>
+      <Toaster />
         <Navbar theme={theme} setTheme={setTheme} />
         <Hero />
         <TrustedBy />
