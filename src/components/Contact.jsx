@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
 
             <div className='col-span-2 flex justify-center'>
-                <button type='submit' className='max-sm:w-max flex items-center justify-center max-sm:m-auto gap-2 bg-primary text-white/90 text-sm px-10 py-3 rounded-full cursor-pointer hover:scale-103 transition-all '>
+                <button type='submit' className='max-sm:w-full w-max flex items-center justify-center max-sm:m-auto gap-2 bg-primary text-white/90 text-sm px-10 py-3 rounded-full cursor-pointer hover:scale-103 transition-all '>
                     Submit <img src={assets.arrow_icon} alt="submitArrow" className='w-4' />
                 </button>
             </div>
