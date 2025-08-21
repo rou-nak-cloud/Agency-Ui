@@ -11,7 +11,7 @@ const Work = () => {
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl mt-2 sm:mt-4'>
             {
                 workData.map((work,idx) => (
-                    <div className='hover:scale-103 transition-all duration-500 cursor-pointer'>
+                    <div key={idx} className='hover:scale-103 transition-all duration-500 cursor-pointer'>
                         <img src={work.image} alt="workImages" className='w-full rounded-xl' />
                         <h3 className='mt-3 mb-2 font-semibold text-lg'>{work.title}</h3>
                         <p className='w-5/6 text-sm opacity-70'>{work.description}</p>
