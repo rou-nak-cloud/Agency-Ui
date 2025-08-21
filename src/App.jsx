@@ -8,7 +8,7 @@ const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
   return (
     <>
-      <div className='dark:bg-black/90 relative'>
+      <div className='dark:bg-black/95 relative'>
         <Navbar theme={theme} setTheme={setTheme} />
         <Hero />
         <TrustedBy />
