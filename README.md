@@ -68,7 +68,7 @@ Get your Access Key ->
 ## 📬 Contact  
 
 This project includes a fully functional **Contact Form** powered by [Web3Forms](https://web3forms.com/).  
-Visitors can send you messages directly through the form, and you’ll receive them via email instantly.  
+Visitors can send me messages directly through the form, and i’ll receive them via email instantly.  
 ---
 
 ## 👨‍💻 Author  
