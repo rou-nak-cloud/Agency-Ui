@@ -5,7 +5,7 @@ import { workData } from '../assets/assets'
 const Work = () => {
   return (
     <>
-     <div className='flex flex-col items-center gap-7 pt-20 sm:pt-30 px-4 sm:px-12 lg:px-24 xl:px-40 text-gray-700 dark:text-white/90'>
+     <div id='our-work' className='flex flex-col items-center gap-7 pt-20 sm:pt-30 px-4 sm:px-12 lg:px-24 xl:px-40 text-gray-700 dark:text-white/90'>
         <ServiceTitle title='Our latest work' desc='From strategy to execution, we craft digital solutions that move your business forward.' />
 
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl mt-2 sm:mt-4'>
