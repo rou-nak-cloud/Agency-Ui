@@ -64,3 +64,12 @@ Get your Access Key ->
 <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
 
 ```
+---
+## 📬 Contact  
+
+This project includes a fully functional **Contact Form** powered by [Web3Forms](https://web3forms.com/).  
+Visitors can send you messages directly through the form, and you’ll receive them via email instantly.  
+---
+
+## 👨‍💻 Author  
+Made with ❤️ by **Rounak**  
