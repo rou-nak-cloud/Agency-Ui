@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import {motion} from 'motion/react'
 
 const ServiceCard = ({service,index}) => {
     const [position, setPosition] = useState({x:0, y:0})
@@ -15,7 +16,12 @@ const ServiceCard = ({service,index}) => {
     
   return (
     <>
-     <div className='max-w-lg m-2 sm:m-4 rounded-3xl border border-gray-300 dark:border-gray-800 shadow-lg shadow-gray-300 dark:shadow-gray-800 relative overflow-hidden' onMouseEnter={()=>setVisible(true)} onMouseLeave={()=>setVisible(false)} ref={divRef} onMouseMove={handleMouseMove} >
+     <motion.div
+     initial={{opacity:0,y:30}}
+     whileInView={{opacity:1,y:0}}
+     transition={{duration:0.5,delay:index*0.3}}
+     viewport={{once:true}}
+     className='max-w-lg m-2 sm:m-4 rounded-3xl border border-gray-300 dark:border-gray-800 shadow-lg shadow-gray-300 dark:shadow-gray-800 relative overflow-hidden' onMouseEnter={()=>setVisible(true)} onMouseLeave={()=>setVisible(false)} ref={divRef} onMouseMove={handleMouseMove} >
 
       {/* this self closing div is only for hovering light effect */}
         <div className={`w-[300px] h-[300px] rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 blur-2xl absolute z-0 pointer-events-none transition-opacity duration-500 mix-blend-lighten ${visible ? 'opacity-70' : 'opacity-0'}`} style={{top:position.y - 150, left:position.x - 150}} 
@@ -31,7 +37,7 @@ const ServiceCard = ({service,index}) => {
                     <p className='text-sm mt-3'>{service.desc}</p>
                 </div>
             </div>
-     </div>
+     </motion.div>
     </>
   )
 }

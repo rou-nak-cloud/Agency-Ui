@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import assets from '../assets/assets'
 import ThemeMode from './ThemeMode';
+import {motion} from 'motion/react'
 
 const Navbar = ({ theme, setTheme, }) => {
     const [menuClose, setMenuClose] = useState(false)
@@ -12,7 +13,11 @@ const Navbar = ({ theme, setTheme, }) => {
     ];
   return (
     <>
-     <div className='flex items-center justify-between p-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white-900/80 dark:bg-900/70'>
+     <motion.div 
+     initial={{opacity:0, y:-50}}
+     animate={{opacity:1,y:0}}
+     transition={{duration:0.5,ease:"easeOut"}}
+     className='flex items-center justify-between p-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white-900/80 dark:bg-900/70'>
         <img src={theme === 'dark' ? assets.logo_dark : assets.logo} alt="companyLogo" className='w-32 sm:w-40' />
 
         <div className={`text-gray-700 dark:text-white/90 sm:text-sm ${!menuClose ? `max-sm:w-0 overflow-hidden` : `max-sm:w-55 max-sm:pl-12`} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:items-start max-sm:bg-primary/60 max-sm:text-white max-sm:pt-20 flex items-center gap-5 transition-all`}>
@@ -35,7 +40,7 @@ const Navbar = ({ theme, setTheme, }) => {
             </a>
         </div>
 
-     </div> 
+     </motion.div> 
     </>
   )
 }
