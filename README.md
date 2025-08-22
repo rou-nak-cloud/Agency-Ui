@@ -1,12 +1,66 @@
-# React + Vite
+# 🌐 Agency UI - Modern Responsive Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive **Agency Website UI** built with **React, TailwindCSS, and Framer Motion**, featuring **dark/light mode theme switching**, smooth animations, and a **working contact form powered by Web3Forms**.  
 
-Currently, two official plugins are available:
+🚀 **Live Demo** → [Agency UI](https://agency-ui-three.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎨 **Modern UI/UX Design**  
+- 📱 **Fully Responsive** – Optimized for **mobile, tablets, and large screens**  
+- 🌗 **Dark/Light Theme Toggle**  
+- 🎬 **Framer Motion Animations** – Smooth transitions & interactive effects  
+- 📩 **Functional Contact Form** – Integrated with [Web3Forms](https://web3forms.com) to send messages directly  
+- ⚡ **Fast & Optimized** – Built with **Vite** + TailwindCSS  
+- 🛠️ **Reusable Components** – Navbar, Hero, Services, Our Work, and Contact  
+
+---
+## 🌗 Theme Toggle (Dark/Light Mode)
+
+- Implemented using Tailwind’s dark variant
+- Users can switch between light 🌞 and dark 🌙 modes seamlessly
+  
+## 🖼️ Screenshots
+
+### 🌞 Light Mode  
+![Light Mode](./screenshots/light-mode.png)
+
+### 🌙 Dark Mode  
+![Dark Mode](./screenshots/dark-mode.png)
+
+### 📱 Mobile Responsive  
+![Mobile View](./screenshots/mobile.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Vite  
+- **Styling:** TailwindCSS  
+- **Animations:** Framer Motion  
+- **Forms:** Web3Forms API  
+- **Deployment:** Vercel  
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/agency-ui.git
+cd agency-ui
+
+npm install
+npm run dev
+
+WEB3FORMS
+This project uses Web3Forms for sending messages via the contact form.
+Create an account on Web3Forms
+Get your Access Key -> 
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+
+```
