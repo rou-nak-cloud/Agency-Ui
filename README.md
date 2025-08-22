@@ -1,8 +1,8 @@
 # 🌐 Agency UI - Modern Responsive Website
 
-A fully responsive **Agency Website UI** built with **React, TailwindCSS, and Framer Motion**, featuring **dark/light mode theme switching**, smooth animations, and a **working contact form powered by Web3Forms**.  
+A fully responsive **Agency Website UI**. This site can be used with any agency related work, which is ready to work and run, built with **React, TailwindCSS, and Framer Motion**, featuring **dark/light mode theme switching**, smooth animations, and a **working contact form powered by Web3Forms**.  
 
-🚀 **Live Demo** → [Agency UI](https://agency-ui-three.vercel.app/)
+🚀 **Live Site** → [Agency UI](https://agency-ui-three.vercel.app/)
 
 ---
 
